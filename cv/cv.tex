@@ -1,0 +1,458 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Simple LaTeX CV Template %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTE: If you find that it says                                     %%
+%%                                                                    %%
+%%                           1 of ??                                  %%
+%%                                                                    %%
+%% at the bottom of your first page, this means that the AUX file     %%
+%% was not available when you ran LaTeX on this source. Simply RERUN  %%
+%% LaTeX to get the ``??'' replaced with the number of the last page  %%
+%% of the document. The AUX file will be generated on the first run   %%
+%% of LaTeX and used on the second run to fill in all of the          %%
+%% references.                                                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[11pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+%\usepackage{times}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{comment}
+
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+%        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+% Layout: Puts the section titles on left side of page
+\reversemarginpar
+
+%
+%         PAPER SIZE, PAGE NUMBER, AND DOCUMENT LAYOUT NOTES:
+%
+% The next \usepackage line changes the layout for CV style section
+% headings as marginal notes. It also sets up the paper size as either
+% letter or A4. By default, letter was used. If A4 paper is desired,
+% comment out the letterpaper lines and uncomment the a4paper lines.
+%
+% As you can see, the margin widths and section title widths can be
+% easily adjusted.
+%
+% ALSO: Notice that the includefoot option can be commented OUT in order
+% to put the PAGE NUMBER *IN* the bottom margin. This will make the
+% effective text area larger.
+%
+% IF YOU WISH TO REMOVE THE ``of LASTPAGE'' next to each page number,
+% see the note about the +LP and -LP lines below. Comment out the +LP
+% and uncomment the -LP.
+%
+% IF YOU WISH TO REMOVE PAGE NUMBERS, be sure that the includefoot line
+% is uncommented and ALSO uncomment the \pagestyle{empty} a few lines
+% below.
+%
+
+%% Use these lines for letter-sized paper
+\usepackage[paper=letterpaper,
+            %includefoot, % Uncomment to put page number above margin
+            marginparwidth=1.2in,     % Length of section titles
+            marginparsep=.05in,       % Space between titles and text
+            margin=1in,               % 1 inch margins
+            includemp]{geometry}
+
+%% Use these lines for A4-sized paper
+%\usepackage[paper=a4paper,
+%            %includefoot, % Uncomment to put page number above margin
+%            marginparwidth=30.5mm,    % Length of section titles
+%            marginparsep=1.5mm,       % Space between titles and text
+%            margin=25mm,              % 25mm margins
+%            includemp]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\pagestyle{empty}      % comment this to include page numbers
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}
+          {0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift}%
+       \parbox{4in}{\, \hfill %
+                    \arabic{page} of \protect\pageref*{LastPage} % +LP
+%                    \arabic{page}                               % -LP
+                    \hfill \,}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[\includegraphics[height=1.5in]{my_picutre}]{Your Name}
+%
+% the picture will be flush right across from the name.
+\newcommand{\makeheading}[2][]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \hyphenpenalty=10000%
+    \vspace{1.3\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
+    \vspace{-\baselineskip}\par}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\makeheading{Du D. Nguyen}
+
+\section{Contact Information}
+
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table.
+%
+% ALSO: \rcollength is the width of the right column of the table
+%       (adjust it to your liking; default is 1.85in).
+%
+\newlength{\rcollength}\setlength{\rcollength}{1.6in}%
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
+Robert J. Trulaske, Sr. College of Business   & \href{http://du-dnguyen.github.io}{du-dnguyen.github.io} \\
+University of Missouri, Cornell Hall & \email{du.nguyen@mail.missouri.edu}\\
+Columbia, Missouri 665211 & \email{ndd2107@gmail.com}\\
+\end{tabular}
+
+
+\section{Research Interests}
+
+Asset pricing, Behavioral finance, Investments.
+
+\section{Education}
+{\textbf{University of Missouri - Columbia}, 
+Missouri, US
+\begin{outerlist}
+\item[] Ph.D. Business Administration, 
+              {Concentration: Finance}, expected 2024
+\end{outerlist}
+\vspace{.1in}
+
+{\textbf{University of Exeter}},
+Exeter, UK
+\begin{outerlist}
+\item[] M.Sc.,
+             {Financial Analysis and Fund Management},
+             2012 with \emph{Distinction}
+        \begin{innerlist}
+        \item Thesis: \emph{Distress Risk and Stock Returns in the UK Industrials Industry}
+        \item Supervisor:
+             \href{http://business-school.exeter.ac.uk/about/people/profile/index.php?web_id=Angela_Christidis}
+                   {Angela Christidis}, Senior Lecturer in Finance
+        %\item Related Courses: Investment Research Methods 1 \& 2
+        %\item Awards: Dean's Commendations, The Exeter Award
+        \end{innerlist}
+\end{outerlist}
+\vspace{.1in}
+
+{\textbf{Hanoi Foreign Trade University}},
+Hanoi, Vietnam
+\begin{outerlist}
+\item[] Bachelor of Economics,
+             {Concentration: International Trade},
+             2011 with \emph{Excellence}
+        \begin{innerlist}
+        \item Dissertation: The Trend towards Protectionism in the Global Financial Crisis and Lessons for Vietnam (\emph{Highest graded paper})
+        \item Supervisor: Tien N. Dao, Associate Professor in Economics
+        %\item Related Courses: Macroeconomics 1 \& 2, Microeconomics 1 \& 2, Algebra, Calculus, Probability, Econometrics, Principles of Economic Statistics.
+        \end{innerlist}
+\end{outerlist}
+\vspace{.1in}
+
+\section{Other Certificates}
+{\textbf{National Economics University}}, VN (2019)
+\begin{outerlist}
+\item[] {}
+   \begin{innerlist}
+   \item Completed undergraduate mathematical foundation courses in Mathematical Finance \emph{(GPA: 4.0)}
+   %Linear Algebra (A+), Calculus I and II (A+), Real Analysis (A+), Probability Theory (A+), Mathematical Statistics (exp.A), Fundamentals of Mathematical Finance (exp.A+)
+   \end{innerlist}
+\end{outerlist}      
+\vspace{.1in}
+
+{\textbf{Rice University}}, US (2017)
+\begin{outerlist}
+\item[] {}
+   \begin{innerlist}
+   \item Completed online math and statistics camps for Economics Ph.D. students \emph{(Distinction)}
+   \end{innerlist}
+\end{outerlist}      
+\vspace{.1in}
+{\textbf{CFA Institute}}, US
+\begin{outerlist}
+\item[] {}
+    \begin{innerlist}
+    \item CFA Charterholder (since 2017)
+    \end{innerlist}
+\end{outerlist}
+\vspace{.1in}
+{\textbf{Vietnam Center for Research on Economics, Management and Environment}}, VN (2016)
+\begin{outerlist}
+\item[] {}
+   \begin{innerlist}
+   \item Completed preparatory courses for graduate study in Economics \emph{(top 5\%)} 
+   %(Optimization, Intermediate Micro, Macroeconomics, Econometrics)
+   \end{innerlist}
+\end{outerlist}
+\vspace{.1in}
+
+\section{Publications}
+\vspace{-.1275in}
+\begin{bibsection}
+    \item {\bf Search-based Sentiment and Stock Market Reactions: An Empirical Evidence in Vietnam} (with Minh Pham), \href{http://www.jafeb.org/journal/article.php?code=64095}{Journal of Asian Finance, Economics and Business, Vol 5, No 4 (November 2018), pp 45-56}.
+  \begin{itemize}
+   \item[] \emph{Abstract}: We construct an internet search-based measure of sentiment and examine its relationship with Vietnam stock market returns. Consistent with prediction from sentiment theories, we document significant short-term reversals across three major stock indices. The difference from previous literature is that Vietnam stock market absorbs the contemporaneous decline slower while the rebound happens within a day. Further analysis implies that the sentiment-induced effect is mainly driven by pessimism. On the other hand, optimistic investors seem to delay in taking their investment action until the market corrects. Our empirical results contribute to the behavioral finance strand that studies the role of sentiment in emerging financial markets, where noise traders and limits to arbitrage are more obvious.
+  \end{itemize}
+  
+\section{Other Papers}
+\vspace{-.1275in}
+\begin{bibsection}
+ \item {\bf Distress Risk and Stock Returns in the UK Industrials Industry} \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2272456}{\emph{(Masters Thesis)}}
+  \begin{itemize}
+  \item[] \emph{Abstract}: I develop a dynamic logit model for bankruptcy prediction within the UK Industrials and use the fitted probability of bankruptcy as a measure of financial distress. In contrast to the distress risk puzzle, I find that financially distressed stocks deliver significantly positive abnormal returns. I also find that small firms with higher risk of failure tend to deliver higher stock returns. The findings suggests that in order to earn higher returns investors should pick stocks of small-sized firms with higher bankrupt probabilities.
+  \end{itemize}  
+
+\section{Professional Services}
+\begin{outerlist}
+  \item[] Ad-hoc Reviewer: Applied Economics Letters incorporating Applied Financial Economics Letters.
+  %\item[] External Research: Vietnam Ministry of Education's Project on Studying the Relationship between Financing Education and Economic Growth - 2016 (team member: summarizing literature and preparing research proposal)
+  %\item[] Academic Mentor: CFA Annual Research Challenge (national finalist - 2014), CIMA Global Research Challenge (national finalist - 2015)
+\end{outerlist}
+
+\section{Teaching}
+\begin{outerlist}
+  \item[]  {\bf Lecturer in Finance}, \hfill {2013 - 2019}\\
+  Faculty of Management and Tourism, Department of Finance, Hanoi University
+  \begin{innerlist}
+  \item Instructor: Fundamentals of Financial Management, Financial Instruments, Financial Modeling, Econometrics
+  \item Tutor: Investments and Portfolio Management, Financial Statement Analysis
+\end{innerlist}
+\end{outerlist}
+
+\section{Academic Honors and Awards}
+\begin{outerlist}
+\item[] Trulaske College of Business Ph.D. Scholarship \hfill 2019-
+\item[] Strategic Priority Scholarship \hfill 2019- 
+\item[] Graduate Finance Fellowship Fund \hfill 2019
+\item[] Exeter Dean's Commendation Award and the Exeter Award \hfill 2012
+\item[] Dissertation Prize, Hanoi Foreign Trade University \hfill 2011  
+\end{outerlist}
+
+%\begin{innerlist}
+%\item Dean's Commendation for Outstanding Performance \hfill Dec 2012
+%\item The Exeter Award for Extracurricular Activities\hfill Jun 2012
+%\item The Exeter Language Scholarship \hfill Aug 2011
+%\end{innerlist}
+%
+%\halfblankline
+%
+%Student Awards --- Hanoi Foreign Trade University
+%\begin{innerlist}
+%\item Highest Graded Dissertation Paper\hfill Jun 2011
+%\end{innerlist}
+
+\section{Other}
+\begin{innerlist}
+    \item Computer languages: Stata, R, LaTeX
+    \item (Human) languages: Vietnamese (native), English (fluent)
+    %\item Alter-ego: Playing piano, Reading fiction, Fitness
+\end{innerlist}
+\halfblankline
+
+%\section{References}
+
+%\href{http://business-school.exeter.ac.uk/about/people/profile/index.php?web_id=Angela_Christidis} {Angela Christidis}
+%\begin{innerlist}
+%\item[] Director of Education (Finance)  \hfill {Phone: +44-1392-72-2542}\\
+%Senior Lecturer in Finance \hfill{E-mail: a.c.christidis@exeter.ac.uk}\\
+%Exeter Business School \\
+%University of Exeter, UK
+%\end{innerlist}
+
+%\halfblankline
+
+%\href{https://www.parisschoolofeconomics.eu/en/le-van-cuong/} {Cuong Le Van}
+%\begin{innerlist}
+%\item[] Emeritus Professor in Economics \hfill {Phone: +33-1440-78-291}\\
+%Paris School of Economics, France \hfill{E-mail: Cuong.Le-Van@univ-paris1.fr}\\
+
+%\end{innerlist}
+%\halfblankline
+
+%Trung Thanh Tong
+%\begin{innerlist}
+%\item[] Head, Fundamental Mathematics Dept. \hfill {Phone: +84-2436-28-0280}\\
+%Faculty of Mathematical Economics \hfill{E-mail: trungtt@neu.edu.vn}\\
+%National Economics University, Vietnam \\
+%\end{innerlist}
+
+
+
+%Stanley Gyoshev, Ph.D.
+%\begin{innerlist}
+%\item[] Senior Lecturer in Finance \hfill {Phone: +44-1392-72-3227}\\
+%Exeter Business School \hfill{E-mail: s.gyoshev@exeter.ac.uk}\\
+%University of Exeter, UK
+%\end{innerlist}
+
+%\halfblankline
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
