@@ -1,0 +1,35 @@
+---
+output:
+  html_document:
+    keep_md: true
+---
+
+A senior PhD student in finance told me not to spend too much time on textbooks during the summer before the PhD. Instead she highly recommended me to read _stories and blogs about economics_. So here are my readings with some comments:  
+
+1.  _A Little History of Economics_ by Niall Kishtainy
+
+    This is a short and easy (i.e. no math) reading on the development of economics' ideas. I notice that most seminal ideas were pushed by the demand to (re)solve some serious questions or conflicts of the time. A few of them, though arose in our society centuries ago, still persist today (e.g. capitalism vs. socialism). Some contributors to the finance scholarship are mentioned: Markowitz (portfolio selection), Fama (efficient markets), Shiller and Thaler (behavioral finance).  
+    My take-away is that _everything_ around us has its own economics. If you are deep in observing and thinking, then you may pull out some interesting ideas even from seemingly mundane things. I'd suggest to read further _Freakonomics_ by Levitt and Dubner to understand this argument.  
+    There is also another (older) book on the history of economics ( _The Wordly Philosophers_ by Heilbroner) that I read a lot of positive comments about.
+  
+2.  _A History of the Theory of Investments_ by Mark Rubinstein
+
+    This is a long and hard (i.e. heavy math) reading on the development of investments theory. Rubinstein documented its past in three phases: before 1950, from 1950 to 1980, and after 1980. What I admire about the book is that the author spent significant time to trace root of ideas and their subsequent development, as he often reminded us that the Stigler's law of eponymy holds even in this science.  
+    I have to admit that I couldn't understand everything Rubinstein documented, especially the proofs. My objective before reading a history book is to understanding in what context each idea was born and mapping ideas together. Yet I haven't achieved that goal. I make a promise to get back to it as a reference in the future when I need to delve deep in some pioneering ideas of financial economics.  
+    It's also sad to learn that Mark Rubinstein passed away last May. He'll surely be remembered for his many great contributions to our field, especially in asset pricing.
+
+3.  _A Random Walk down Wall Street_ by Burton Malkiel
+
+    I'm still reading this book so I can't give away much comments. I was skeptical of any book that claims some succesful investments strategies on the cover, but the book appears on reading list of many notable economists (e.g. Greg Mankiw) (and Malkiel is also a respected academic), so I decided to give it a try.
+    
+I also spent some time to review (hopefully necessary for the first year) math with:
+
+1.  _Linear Algebra Done Right_ by Sheldon Axler
+2.  _Probability Essentials_ by Jean Jacod and Philip Protter
+
+A light reading that I read intermittently: _The Book Thief_ by Markus Zusak.
+    
+
+    
+  
+

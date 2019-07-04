@@ -1,16 +1,9 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Du D. Nguyen
+subtitle: A short biography.
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am a first-year Ph.D. student in Business Administration (Finance) at University of Missouri at Columbia. My research interests span asset pricing, investments, and behavioral finance. My Mizzou webpage is [here](http://business.missouri.edu/people-directory/du-nguyen").  
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I earned a masters degree from University of Exeter in the UK and a bachelor degree from Hanoi Foreign Trade University in Vietnam.

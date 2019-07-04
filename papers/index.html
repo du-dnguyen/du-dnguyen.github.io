@@ -1,0 +1,92 @@
+---
+layout: page
+title: Papers
+subtitle: "<span style='font-size: 20px'><q>If you are going through hell, keep going.</q> <br> <i> Winston Churchill </i> </span>"
+---
+<!-- The style template is adopted from http://paulgp.github.io  -->   
+   <style>
+     @import url("http://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.css");
+      button.accordion2 {
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.4s;
+      background-color: #f8f8f8;
+      }
+      button.accordion {
+      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      padding: 0px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 100%;
+      transition: 0.4s;
+      background-color: #f8f8f8;
+      }
+      button.accordion.active, button.accordion:hover {
+      background-color: #f8f8f8;
+      }
+      button.accordion:after {
+      content: '[+]';
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
+      }
+      button.accordion2:after {
+      content: '[#]';
+      font-size: 90%;
+      color:#777;
+      float: left;
+      margin-left: 1px;
+      }
+      button.accordion.active:after {
+      content: "[\2212]";
+      }
+      div.panel {
+      padding: 0 20px;
+      margin-top: 5px;
+      display: none;
+      background-color: white;
+      font-size: 100%;
+      }
+      div.panel.show {
+      display: block !important;
+      }
+     
+   </style>
+ <section>
+	<h2>
+	  <a class="anchor" href="#publications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Publications:
+	  </h2>
+ <ol>
+ <li>	<p> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3315897" style="font-size:100%; font-weight:bold"> Search-based Sentiment and Stock Market Reactions: An Empirical Evidence in Vietnam</a><br> with Minh Pham (<b>Journal of Asian Finance, Economics, and Business</b>, 2018)
+	<button class="accordion">
+	  Abstract
+	</button>
+	</p>
+	<div class="panel" style="background-color: #F1F1F1; color: #666; padding: 10px"> The paper aims to examine relationships between search-based sentiment and stock market reactions in Vietnam. This study constructs an internet search-based measure of sentiment and examines its relationship with Vietnamese stock market returns. The sentiment index is derived from Google Trends’ Search Volume Index of financial and economic terms that Vietnamese searched from January 2011 to June 2018. Consistent with prediction from sentiment theories, the study documents significant short-term reversals across three major stock indices. The difference from previous literature is that Vietnam stock market absorbs the contemporaneous decline slower while the subsequent rebound happens within a day. The results of the study suggest that the sentiment-induced effect is mainly driven by pessimism. On the other hand, optimistic investors seem to delay in taking their investment action until the market corrects. The study proposes a unified explanation for our findings based on the overreaction hypothesis of the bearish group and the strategic delay of the optimistic group. The findings of the study contribute to the behavioral finance strand that studies the role of sentiment in emerging financial markets, where noise traders and limits to arbitrage are more obvious. They also encourage the continuous application of search data to explore other investor behaviors in securities markets.
+	</div>
+	</li>
+	</ol>
+	
+	<!--<h2>
+	  <a class="anchor" href="#workingpapers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Working Papers:
+	  </h2>	-->
+	</section>
+	 <!-- <script src="javascripts/scale.fix.js"></script> -->
+    <script> 
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.parentNode.nextElementSibling.classList.toggle("show");
+      }
+    }
+    </script> 
