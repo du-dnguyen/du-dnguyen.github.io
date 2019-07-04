@@ -19,9 +19,14 @@ A senior PhD student in finance told me not to spend too much time on textbooks 
 
     This is a long and hard (i.e. heavy math) reading on the development of investments theory. Rubinstein documented its past in three phases: before 1950, from 1950 to 1980, and after 1980. What I admire about the book is that the author spent significant time to trace root of ideas and their subsequent development, as he often reminded us that the Stigler's law of eponymy holds even in this science.  
     I have to admit that I couldn't understand everything Rubinstein documented, especially the proofs. My expectation was to understanding in what context each idea was born and connecting ideas together. Yet the result came short of that expectation. But I make a promise to get back to the book as a reference in the future when I need to delve deep in some pioneering ideas of financial economics.  
-    It's also sad to learn that Mark Rubinstein passed away last May. He'll surely be remembered for his many great contributions to our field, especially in asset pricing.
+    It's also sad to learn that Mark Rubinstein passed away last May. He'll surely be remembered for his many great contributions to our fields, especially in asset pricing.  
+    
+3.  _The Foolish Corner_ by John Howe and Robb Corrigan  
 
-3.  _A Random Walk down Wall Street_ by Burton Malkiel
+    This is a short book on common behavioral biases that people make in their financial decisions and how they can be avoided. _Hedonic adaptation_ is a new bias I learned from reading this book. I came across the others from reading _Thinking, Fast and Slow_ by Daniel Kahneman and _Nudge_ by Richard Thaler and Sunstein. One of the book's authors (Prof Howe) is the chair of the finance department that I will be doing my PhD.
+    These books focus more or less on individual biases. If you are interested in understanding how such biases can lead to wide-scale economic disasters, I'd recommend _Irrational Exuberance_ by Robert Shiller.
+
+4.  _A Random Walk down Wall Street_ by Burton Malkiel
 
     I'm still reading this book so I can't give away much comments. I was skeptical of any book that claims some succesful investments strategies on the cover, but the book appears on reading list of many notable economists (e.g. Greg Mankiw) (and Malkiel is also a respected academic), so I decided to give it a try.
     
