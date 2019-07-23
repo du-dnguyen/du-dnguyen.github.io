@@ -7,7 +7,7 @@ output:
     keep_md: true
 ---
 
-  I come across some good pieces of advice for PhD students that I feel urged to share. They are for graduate students in economics but since finance students share similar coursework in the first year, so I think the advice applies.
+  I came across some good pieces of advice for PhD students that I feel urged to share. They are for graduate students in economics but since finance students share similar coursework in the first year, so I think the advice applies.
 
 1. **First-year general advice**: [Mastering Year One](https://static1.squarespace.com/static/5adc9e5325bf0289a67f02b4/t/5adcb2f9758d46f994d0e795/1524413186131/MY1.pdf) by Alex Zentefis. He also shares a book list for graduate school in economics or finance.
 
