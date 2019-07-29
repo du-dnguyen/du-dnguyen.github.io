@@ -34,8 +34,6 @@ I also spent some time to review (hopefully necessary for the first year) math w
 
 1.  _Linear Algebra Done Right_ by Sheldon Axler
 2.  _Probability Essentials_ by Jean Jacod and Philip Protter
-
-A light reading that I read intermittently: _The Book Thief_ by Markus Zusak.
     
 
     
