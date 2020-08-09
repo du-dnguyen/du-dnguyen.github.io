@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Du's Personal Webpage
+title: About Me
 
 # Short description of your site
 description: 
@@ -21,7 +21,7 @@ description:
 # List of links in the navigation bar
 navbar-links:
   #About Me: "aboutme"
-  Blog: "/blog/index.html"
+  Blog: "blog.html"
   Papers: "/papers/index.html"
   CV: "/cv/cv.pdf"
 
