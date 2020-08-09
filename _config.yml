@@ -21,7 +21,7 @@ description:
 # List of links in the navigation bar
 navbar-links:
   #About Me: "aboutme"
-  Blog: "blog.html"
+  Blog: "/blog/index.html"
   Papers: "/papers/index.html"
   CV: "/cv/cv.pdf"
 
@@ -194,7 +194,7 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
+  rooturl: '/blog/_posts'
   media: 'img'
   ignore:
     - 404.html
