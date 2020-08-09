@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Du's Blog
+title: Du's Personal Webpage
 
 # Short description of your site
-description: Cold Head and Warm Heart
+description: 
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,7 +20,8 @@ description: Cold Head and Warm Heart
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  #About Me: "aboutme"
+  Blog: "/blog/index.html"
   Papers: "/papers/index.html"
   CV: "/cv/cv.pdf"
 

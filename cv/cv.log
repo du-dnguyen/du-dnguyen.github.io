@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  5 JUL 2020 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 AUG 2020 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,80 +338,74 @@ Overfull \hbox (19.53503pt too wide) in paragraph at lines 286--294
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 334.
-
-
-Overfull \hbox (14.1596pt too wide) in paragraph at lines 337--339
-[][][]\OT1/cmr/bx/n/10.95 Search-based Sen-ti-ment and Stock Mar-ket Re-ac-tion
-s: An Em-pir-i-cal
- []
-
-
-Overfull \hbox (8.66927pt too wide) in paragraph at lines 339--340
-\OT1/cmr/m/n/10.95 dif-fer-ence from pre-vi-ous lit-er-a-ture is that Viet-nam 
-stock mar-ket ab-sorbs
- []
-
-
-Overfull \hbox (0.82167pt too wide) in paragraph at lines 339--340
-\OT1/cmr/m/n/10.95 the con-tem-po-ra-ne-ous de-cline slower while the re-bound 
-hap-pens within
- []
-
-
-Overfull \hbox (1.27797pt too wide) in paragraph at lines 339--340
-\OT1/cmr/m/n/10.95 strand that stud-ies the role of sen-ti-ment in emerg-ing fi
--nan-cial mar-kets,
- []
-
-
-Overfull \hbox (6.9253pt too wide) in paragraph at lines 348--349
+Overfull \hbox (6.9253pt too wide) in paragraph at lines 339--340
 \OT1/cmr/m/n/10.95 pro-cess-ing. We find that a 1-standard-deviation in-crease 
 in the seg-ment
  []
 
 
-Overfull \hbox (3.68085pt too wide) in paragraph at lines 348--349
+Overfull \hbox (3.68085pt too wide) in paragraph at lines 339--340
 \OT1/cmr/m/n/10.95 dif-fer-ent mea-sures of fore-cast ac-cu-racy and mood, as w
 ell as al-ter-na-tive
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 344.
+
+
+Overfull \hbox (14.1596pt too wide) in paragraph at lines 347--349
+[][][]\OT1/cmr/bx/n/10.95 Search-based Sen-ti-ment and Stock Mar-ket Re-ac-tion
+s: An Em-pir-i-cal
+ []
+
+
+Overfull \hbox (8.66927pt too wide) in paragraph at lines 349--350
+\OT1/cmr/m/n/10.95 dif-fer-ence from pre-vi-ous lit-er-a-ture is that Viet-nam 
+stock mar-ket ab-sorbs
+ []
+
+
+Overfull \hbox (0.82167pt too wide) in paragraph at lines 349--350
+\OT1/cmr/m/n/10.95 the con-tem-po-ra-ne-ous de-cline slower while the re-bound 
+hap-pens within
+ []
+
+
+Overfull \hbox (1.27797pt too wide) in paragraph at lines 349--350
+\OT1/cmr/m/n/10.95 strand that stud-ies the role of sen-ti-ment in emerg-ing fi
+-nan-cial mar-kets,
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (4.6846pt too wide) in paragraph at lines 354--357
-[]\OT1/cmr/m/n/10.95 Ad-hoc Re-viewer: Ap-plied Eco-nomics Let-ters in-cor-po-r
-at-ing Ap-plied Fi-nan-cial
- []
-
-
-Overfull \hbox (9.24709pt too wide) in paragraph at lines 361--367
-\OT1/cmr/m/n/10.95 Faculty of Man-age-ment and Tourism, De-part-ment of Fi-nanc
-e, Hanoi Uni-ver-sity 
+Overfull \hbox (3.83177pt too wide) in paragraph at lines 400--401
+[]\OT1/cmr/m/n/10.95 DataCamp Skill Tracks: R (Net-work Anal-y-sis, Text Min-in
+g), Python (Nat-u-ral
  []
 
 
 AED: lastpage setting LastPage
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
  (./cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: FF0B186FEB7EAA7AB3D4A6F5769AEA1A;479.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
+(rerunfilecheck)             Checksum: 60CB5BA0F7F46C9EE5D8EC0752BA6476;538.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 258 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5833 strings out of 492616
- 87117 string characters out of 6129482
+ 5835 strings out of 492616
+ 87141 string characters out of 6129482
  190868 words of memory out of 5000000
- 9714 multiletter control sequences out of 15000+600000
+ 9715 multiletter control sequences out of 15000+600000
  7939 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,8n,43p,952b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -420,13 +414,12 @@ Here is how much of TeX's memory you used:
 cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb>
-Output written on cv.pdf (2 pages, 95842 bytes).
+cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on cv.pdf (2 pages, 88658 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 83 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
