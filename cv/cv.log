@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  9 AUG 2020 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 AUG 2020 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,11 +380,6 @@ Overfull \hbox (1.27797pt too wide) in paragraph at lines 349--350
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (3.83177pt too wide) in paragraph at lines 400--401
-[]\OT1/cmr/m/n/10.95 DataCamp Skill Tracks: R (Net-work Anal-y-sis, Text Min-in
-g), Python (Nat-u-ral
- []
-
 
 AED: lastpage setting LastPage
 [2]
@@ -416,7 +411,7 @@ m/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb>
-Output written on cv.pdf (2 pages, 88658 bytes).
+Output written on cv.pdf (2 pages, 88592 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
