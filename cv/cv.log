@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 AUG 2020 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 AUG 2020 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,10 +350,6 @@ ell as al-ter-na-tive
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 344.
-
-
 Overfull \hbox (14.1596pt too wide) in paragraph at lines 347--349
 [][][]\OT1/cmr/bx/n/10.95 Search-based Sen-ti-ment and Stock Mar-ket Re-ac-tion
 s: An Em-pir-i-cal
@@ -389,7 +385,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: 12B2CB78241B6282535E70E49ECA7B6F;527.
+(rerunfilecheck)             Checksum: 88FD8F199326043312C3BE6941888D17;510.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
  )
 (\end occurred inside a group at level 1)
@@ -397,10 +393,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
 ### simple group (level 1) entered at line 253 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5835 strings out of 492616
- 87141 string characters out of 6129482
+ 5834 strings out of 492616
+ 87136 string characters out of 6129482
  190868 words of memory out of 5000000
- 9715 multiletter control sequences out of 15000+600000
+ 9714 multiletter control sequences out of 15000+600000
  7939 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,8n,43p,952b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -411,7 +407,7 @@ m/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb>
-Output written on cv.pdf (2 pages, 89617 bytes).
+Output written on cv.pdf (2 pages, 89278 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
