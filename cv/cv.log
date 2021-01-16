@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  15 AUG 2020 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 JAN 2021 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,18 +338,6 @@ Overfull \hbox (19.53503pt too wide) in paragraph at lines 281--289
  []
 
 
-Overfull \hbox (6.9253pt too wide) in paragraph at lines 339--340
-\OT1/cmr/m/n/10.95 pro-cess-ing. We find that a 1-standard-deviation in-crease 
-in the seg-ment
- []
-
-
-Overfull \hbox (3.68085pt too wide) in paragraph at lines 339--340
-\OT1/cmr/m/n/10.95 dif-fer-ent mea-sures of fore-cast ac-cu-racy and mood, as w
-ell as al-ter-na-tive
- []
-
-
 Overfull \hbox (14.1596pt too wide) in paragraph at lines 347--349
 [][][]\OT1/cmr/bx/n/10.95 Search-based Sen-ti-ment and Stock Mar-ket Re-ac-tion
 s: An Em-pir-i-cal
@@ -399,7 +387,7 @@ Here is how much of TeX's memory you used:
  9714 multiletter control sequences out of 15000+600000
  7939 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,43p,952b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,43p,860b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
@@ -407,10 +395,10 @@ m/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb>
-Output written on cv.pdf (2 pages, 89501 bytes).
+Output written on cv.pdf (2 pages, 89852 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  15 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
