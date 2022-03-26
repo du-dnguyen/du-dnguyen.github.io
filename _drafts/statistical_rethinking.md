@@ -1,36 +1,4 @@
 ---
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
-layout: post
-title: Statistical Rethinking
-subtitle: How to do Bayesian analysis?
-------
 title: "StatRethinking"
 author: "Du Nguyen"
 date: "3/26/2022"
@@ -66,6 +34,6 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![]({{site_url}}/img/blog_images/{{site_url}}/img/blog_images/{{site_url}}/img/blog_images/{{site_url}}/img/blog_images/{{site_url}}/img/blog_images/{{site_url}}/img/blog_images/{{site_url}}/img/blog_images/{{site_url}}/img/blog_images/statistical_rethinking_files/figure-html/pressure-1.png)<!-- -->
+![](statistical_rethinking_files/figure-html/pressure-1.png)<!-- -->
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
