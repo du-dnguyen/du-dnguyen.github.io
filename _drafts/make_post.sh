@@ -23,12 +23,11 @@ cd ../_posts/
 then
 markdown_for_post=*${markdown}
 fi
-cd $wd
 markdown_output="../_posts/${markdown_for_post}"
-cp $markdown $markdown_output
-cp -r $post_files ../img/blog_images
+cp "${wd}/${markdown}" $markdown_output
+cp -r "${wd}/${post_files}" ../img/blog_images
 
-if diff $markdown_output $markdown >/dev/null; then
+if diff $markdown_output "${wd}/${markdown}" >/dev/null; then
 echo "Your post was succesfully moved";
 else
   echo "There was an error in moving your post";
