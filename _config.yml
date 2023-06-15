@@ -20,7 +20,7 @@ description: Du's Personal Website
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  #About Me: "aboutme"
   #Blog: "/blog/index.html"
   Papers: "/papers/index.html"
   CV: "/cv/cv.pdf"
