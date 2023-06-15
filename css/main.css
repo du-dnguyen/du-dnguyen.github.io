@@ -54,7 +54,8 @@ max-width: 100%;
 .one-half {
 float: left;
 width: 50%;
-border: 1px;
+margin-right: 5px;
+margin-left: 5px;
 }
 
 .one-half img  {
