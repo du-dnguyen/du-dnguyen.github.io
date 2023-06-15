@@ -48,15 +48,14 @@ hr.small {
 }
 
 .container {
-max-width: 150%;
+max-width: 100%;
 }
 
 .one-half {
 float: left;
 width: 45%;
-margin-right: 3px;
-margin-left: 3px;
-padding: 2px 1px 0 1px;
+margin: 1px 3px 0 0;
+padding: 1px 1px 0 0;
 }
 
 .one-half img  {
@@ -66,8 +65,8 @@ max-width: 100%;
 .one-half-right {
 float: left;
 width: 45%;
-margin-left: 5px;
-padding: 2px 1px 0 1px;
+margin: 0 0 0 3px;
+padding: 1px 1px 0 0;
 text-align: justify
 }
 
