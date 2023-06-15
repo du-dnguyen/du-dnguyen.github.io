@@ -70,10 +70,10 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
 #  rss: true
-  email: "ndd2107@gmail.com"
+  email: "du.nguyen@mail.missouri.edu"
 # facebook: 
   github: du-dnguyen
-  twitter: DuD_Nguyen
+#  twitter: DuD_Nguyen
 #  reddit: youracc
 #  linkedin: youracc
 #  xing: yourname
