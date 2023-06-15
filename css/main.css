@@ -47,7 +47,7 @@ hr.small {
   border-radius: 3px;
 }
 
-container { 
+.container { 
     width:400px; 
     display:inline-block; 
     height:80px; 
@@ -56,18 +56,18 @@ container {
 }
 
 
-left { 
+.left { 
     display:table-cell; 
     vertical-align:middle; 
     width:120px; 
     margin:0; 
     padding:0;   
     height:80px; 
-    background-image:url(URL); 
+    background-image:url("/img/cornell.jpg"); 
     background-size:100%; 
 }
 
-right { 
+.right { 
     display:table-cell; 
     vertical-align:middle; 
     width:280px; 
