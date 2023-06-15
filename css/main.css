@@ -56,10 +56,11 @@ float: left;
 width: 45%;
 margin-right: 3px;
 margin-left: 3px;
+padding: 2px 1px 0 1px;
 }
 
 .one-half img  {
-width: 100%;
+max-width: 100%;
 }
 
 .main-content {
