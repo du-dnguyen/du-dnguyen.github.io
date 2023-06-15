@@ -53,8 +53,8 @@ max-width: 100%;
 
 .one-half {
 float: left;
-width: 45%;
-margin: 1px 3px 0 0;
+width: 42%;
+margin: 1px 5px 0 0;
 padding: 1px 1px 0 0;
 }
 
@@ -64,8 +64,8 @@ max-width: 100%;
 
 .one-half-right {
 float: left;
-width: 45%;
-margin: 0 0 0 3px;
+width: 47%;
+margin: 0 0 0 5px;
 padding: 1px 1px 0 0;
 text-align: justify
 }
