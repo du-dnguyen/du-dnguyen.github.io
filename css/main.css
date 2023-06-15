@@ -48,13 +48,13 @@ hr.small {
 }
 
 .container {
-max-width: 80%;
+max-width: 100%;
 }
 
 .one-half {
 float: left;
 width: 50%;
-border: 1px dashed red;
+border: 1px;
 }
 
 .one-half img  {
