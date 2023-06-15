@@ -63,7 +63,7 @@ hr.small {
     margin:0; 
     padding:0;   
     height:80px; 
-    background-image:url("/img/cornell.jpg"); 
+    background-image:url(../img/cornell.jpg); 
     background-size:100%; 
 }
 
