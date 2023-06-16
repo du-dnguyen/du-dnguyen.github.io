@@ -59,7 +59,8 @@ padding: 1px 1px 0 0;
 }
 
 .one-half img  {
-max-width: 100%;
+  max-width: 100%;
+  border-radius: 30%;
 }
 
 .one-half-right {
