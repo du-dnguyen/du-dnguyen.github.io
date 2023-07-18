@@ -60,13 +60,14 @@ padding: 1px 1px 0 0;
 
 .one-half img  {
   max-width: 100%;
-  border-radius: 30%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .one-half-right {
 float: left;
 width: 47%;
-margin: 0 0 0 5px;
+margin: 0 3px 0 5px;
 padding: 1px 1px 0 0;
 text-align: left
 }
