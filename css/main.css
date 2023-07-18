@@ -62,7 +62,7 @@ padding: 1px 1px 0 0;
   max-width: 100%;
   border-radius: 50%;
   object-fit: cover; /* Ensures the image fills the circular container */
-  width: 75%; /* Adjust the width to make the image smaller */
+  width: 80%; /* Adjust the width to make the image smaller */
   height: auto; /* Preserves the image's aspect ratio */
 }
 
@@ -76,7 +76,7 @@ text-align: left
 
 .one-half-right p {
   line-height: 1.5;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .main-content {
