@@ -23,7 +23,7 @@ navbar-links:
   #About Me: "aboutme"
   #Blog: "/blog/index.html"
   Papers: "/papers/index.html"
-  CV: "/cv/Academic-CV.pdf"
+  CV: "/cv/AcademicCV.pdf"
   
 # Add a parameter to navigate it to another site:
 #paginate_path: "/blog/page:num/"
