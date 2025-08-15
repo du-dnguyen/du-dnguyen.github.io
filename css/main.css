@@ -59,6 +59,8 @@ padding: 1px 1px 0 0;
 }
 
 .one-half img  {
+  display: block;          /* forces each image to take its own line */
+  margin-bottom: 10px;     /* space between stacked images */
   max-width: 100%;
   border-radius: 50%;
   object-fit: cover; /* Ensures the image fills the circular container */
